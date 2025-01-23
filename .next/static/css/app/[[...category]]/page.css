@@ -1,0 +1,137 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/featured-movie/styles.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.styles_movieWrapper__0P_wT {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+
+.styles_movieTitle__kvHmn {
+  font-size: 72px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 900;
+  line-height: 72px;
+  max-width: 25ch;
+}
+
+.styles_overview__Pi9e8 {
+  font-size: 16px;
+  max-width: 70ch;
+}
+.styles_shortOverview__g8Pol {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.styles_actionButtons__bVcRN {
+  display: flex;
+  gap: 12px;
+}
+
+.styles_addButton__ADflA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #eee;
+  border-radius: 999px;
+  width: 62px;
+  height: 62px;
+  color: #eee;
+}
+
+.styles_playButton__xgb1D {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  color: #222;
+  width: 300px;
+  border-radius: 9999px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.styles_moviePosterOverlay__SXWFX {
+  position: absolute;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.9) 30%,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: -1;
+}
+.styles_moviePosterImg__5wAl2 {
+  object-fit: cover !important;
+}
+
+.styles_moviePoster__lEcrN img {
+  height: auto !important;
+  z-index: -2;
+  max-height: 200vh;
+  object-fit: cover;
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/categories/styles.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.styles_categories__TWW11 {
+  display: flex;
+  height: 72px;
+  gap: 24px;
+}
+
+.styles_category__83ISc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 1px solid #333;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/movies-section/styles.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.styles_moviesSection__tK87R {
+  margin-top: 36px;
+}
+
+.styles_title__YcWKJ {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: -1px;
+}
+
+.styles_movies__0ji_g {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-auto-rows: 320px;
+  gap: 24px;
+}
+
+.styles_movie__nfSOb {
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.styles_movie__nfSOb:hover {
+  z-index: 9;
+  transform: scale(1.25);
+}
+
