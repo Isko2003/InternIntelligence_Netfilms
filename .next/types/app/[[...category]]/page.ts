@@ -1,4 +1,4 @@
-// File: C:\Users\Asus\OneDrive\Desktop\Next JS Dersleri\NetFilms Project NextJS\netfilms\app\[[...category]]\page.js
+// File: C:\Users\Asus\OneDrive\Desktop\Netfilms\netfilms\app\[[...category]]\page.js
 import * as entry from '../../../../app/[[...category]]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

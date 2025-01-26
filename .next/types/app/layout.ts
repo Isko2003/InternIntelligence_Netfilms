@@ -1,4 +1,4 @@
-// File: C:\Users\Asus\OneDrive\Desktop\Next JS Dersleri\NetFilms Project NextJS\netfilms\app\layout.jsx
+// File: C:\Users\Asus\OneDrive\Desktop\Netfilms\netfilms\app\layout.jsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
