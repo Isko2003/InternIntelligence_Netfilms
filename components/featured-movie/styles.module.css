@@ -75,3 +75,15 @@
   max-height: 200vh;
   object-fit: cover;
 }
+
+@media screen and (max-width: 500px) {
+  .movieTitle {
+    font-size: 50px;
+  }
+  .playButton {
+    width: 200px !important;
+  }
+  .moviePoster img {
+    width: 370px !important;
+  }
+}

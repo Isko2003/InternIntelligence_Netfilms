@@ -26,5 +26,12 @@
 
 .movie:hover {
   z-index: 9;
-  transform: scale(1.25);
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 500px) {
+  .movie img {
+    max-width: 300px !important;
+    width: 100% !important;
+  }
 }
