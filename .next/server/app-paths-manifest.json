@@ -1,6 +1,6 @@
 {
   "/[[...category]]/page": "app/[[...category]]/page.js",
-  "/register/page": "app/register/page.js",
-  "/movie/[id]/page": "app/movie/[id]/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/login/page": "app/login/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/register/page": "app/register/page.js"
 }

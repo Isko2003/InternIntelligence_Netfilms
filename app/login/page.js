@@ -30,7 +30,6 @@ export default function Login() {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-
     if (formData.email === "" || formData.password === "") {
       setError("Email and password fields should be filled");
       return;
@@ -38,6 +37,7 @@ export default function Login() {
     try {
       await signInWithEmailAndPassword(auth, formData.email, formData.password);
       setError("");
+      localStorage.setItem("userEmail", formData.email);
       Swal.fire({
         text: "Sign In Successfull",
         icon: "success",
@@ -75,7 +75,6 @@ export default function Login() {
               Email
             </label>
             <br />
-
             <input
               type="email"
               id="email"

@@ -14,6 +14,9 @@ const interFontFamily = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={interFontFamily.className}>
+      <head>
+        <title>NETFILMS</title>
+      </head>
       <body className="container">
         <AuthProvider>
           <Header />

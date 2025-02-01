@@ -4,12 +4,24 @@ import { FaPlayCircle } from "react-icons/fa";
 import Link from "next/link";
 import styles from "./styles.module.css";
 import { auth } from "@/firebaseConfig";
-import { onAuthStateChanged, signOut } from "firebase/auth";
-import { useRouter } from "next/navigation";
+import { signOut } from "firebase/auth";
+import { useRouter, usePathname } from "next/navigation"; // usePathname ile sayfa kontrolü
 import Swal from "sweetalert2";
 import { useAuth } from "@/AuthContext";
+
 function Header() {
   const { user, isAuthenticated, isLoggedIn } = useAuth();
+  const [displayName, setDisplayName] = useState("");
+  const pathname = usePathname(); // Kullanıcının hangi sayfada olduğunu belirler
+
+  useEffect(() => {
+    if (user && isLoggedIn && pathname === "/") {
+      setDisplayName(user.displayName || "User");
+    } else {
+      setDisplayName(""); // Eğer ana sayfada değilse, adını gösterme
+    }
+  }, [user, isLoggedIn, pathname]);
+
   const handleLogOut = async () => {
     try {
       const result = await Swal.fire({
@@ -25,20 +37,20 @@ function Header() {
         window.location.href = "/login";
       }
     } catch (err) {
-      console.error(`Error while you logging out ${err}`);
+      console.error(`Error while logging out: ${err}`);
     }
   };
+
   return (
     <header className={`${styles.header} container fluid`}>
       <div className={styles.headerWrapper}>
         <Link href={"/"} className={styles.logo}>
           <FaPlayCircle /> NETFILMS
         </Link>
-
-        {user && user.displayName && isLoggedIn ? (
+        {user && isLoggedIn && pathname === "/" ? (
           <div className={styles.userInfoWrapper}>
             <span className={styles.username}>
-              Hello, {user.displayName || "User"}
+              {displayName ? `Hello, ${displayName}` : "Loading..."}
             </span>
             <div>
               <button className={styles.logoutBtn} onClick={handleLogOut}>

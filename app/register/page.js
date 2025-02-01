@@ -11,10 +11,8 @@ import { useState } from "react";
 import styles from "./styles.module.css";
 import { FaGoogle } from "react-icons/fa";
 import Swal from "sweetalert2";
-import { useAuth } from "@/AuthContext";
 
 export default function Register() {
-  const { isAuthenticated, user, isLoggedIn } = useAuth();
   const router = useRouter();
   const [error, setError] = useState("");
   const [username, setUsername] = useState("");
@@ -56,7 +54,7 @@ export default function Register() {
       await updateProfile(userCredential.user, {
         displayName: formData.username,
       });
-      await userCredential.user.reload();
+      // await userCredential.user.reload();
       setError("");
       setUsername(formData.username);
       localStorage.setItem("userInfo", formData.username);
