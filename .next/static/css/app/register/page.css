@@ -1,0 +1,91 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/register/styles.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.styles_registerWrapper__SqerD {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.styles_googleSignUpButton__p1pq9 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 24rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.styles_googleSignUpButton__p1pq9:hover {
+  background-color: #f9fafb;
+}
+
+.styles_googleSignUpButton__p1pq9:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #e5e7eb, 0 0 0 4px #9ca3af;
+}
+
+.styles_text__HVwE4 {
+  line-height: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.styles_inputWrappers__pazoM {
+  margin-bottom: 0.4rem;
+}
+
+.styles_customButton__6v4Hp {
+  width: 100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.styles_customButton__6v4Hp:hover {
+  background-color: #1d4ed8;
+}
+
+.styles_customInput__htCC8 {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  outline: none;
+  transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.styles_customInput__htCC8:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.5);
+}
+
+.styles_orText___MAgL {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.styles_orSpan__xjUEa {
+  color: white;
+  font-size: 1.4rem;
+}
+

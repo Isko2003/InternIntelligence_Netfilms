@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FaPlus } from "react-icons/fa";
+import { FaPlay } from "react-icons/fa";
 
 import styles from "./styles.module.css";
 
@@ -23,7 +23,9 @@ function FeaturedMovie({ movie = {}, isCompact = true }) {
           Play
         </Link>
         <button className={styles.addButton}>
-          <FaPlus />
+          <Link href={`movie/${movie.id}`}>
+            <FaPlay />
+          </Link>
         </button>
       </div>
       <div className={styles.moviePoster}>

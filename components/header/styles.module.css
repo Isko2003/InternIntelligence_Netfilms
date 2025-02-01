@@ -25,3 +25,38 @@
   font-weight: 700;
   letter-spacing: 2px;
 }
+
+.username {
+  margin-left: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logoutBtn {
+  background-color: #ff4d4f;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logoutBtn:hover {
+  background-color: #d9363e;
+  transform: scale(1.05);
+}
+
+.logoutBtn:active {
+  background-color: #b12a2e;
+  transform: scale(1);
+}
+
+.userInfoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
