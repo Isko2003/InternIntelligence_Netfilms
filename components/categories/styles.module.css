@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 500px) {
   .categories {
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
     gap: 10px;
   }
   .categoriesSection {

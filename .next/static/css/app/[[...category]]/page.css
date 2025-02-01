@@ -10,7 +10,7 @@
 }
 
 .styles_movieTitle__kvHmn {
-  font-size: 72px;
+  font-size: 50px;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: 900;
@@ -79,10 +79,7 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 500px) {
-  .styles_movieTitle__kvHmn {
-    font-size: 50px;
-  }
+@media screen and (max-width: 376px) {
   .styles_playButton__xgb1D {
     width: 200px !important;
   }
@@ -115,7 +112,7 @@
 
 @media screen and (max-width: 500px) {
   .styles_categories__TWW11 {
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
     gap: 10px;
   }
   .styles_categoriesSection__cy8SV {
@@ -142,7 +139,7 @@
 
 .styles_movies__0ji_g {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   grid-auto-rows: 320px;
   gap: 24px;
 }
@@ -160,7 +157,7 @@
   transform: scale(1.05);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 376px) {
   .styles_movie__nfSOb img {
     max-width: 300px !important;
     width: 100% !important;
